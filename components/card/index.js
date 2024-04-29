@@ -1,5 +1,6 @@
 import {Text, View, Image} from 'react-native'
 
+
 import estilo from './style'
 
 export default function Card({porcentagem,titulo,Imagem,descrição}){

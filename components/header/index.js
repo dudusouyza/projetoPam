@@ -1,4 +1,4 @@
-import {View, Text, Drawer } from 'react-native'
+import {View, Text} from 'react-native'
 
 import estilo from './style'
 
@@ -8,11 +8,24 @@ export default function Header(){
 return(
 
 <>
-<Text style={estilo.tituloCard}>Atividade</Text>
 
-<Text style={estilo.tituloCard}>Descrição</Text>
+<View style={estilo.tit}>
+<Text style= {estilo.tit1}>Inicio</Text>
+<Text style= {estilo.tit1}>Promoções</Text>
+<Text style= {estilo.tit1}>Pedidos</Text>
+</View>
 
-<Text style={estilo.tituloCard}>Porcentagem </Text>
+<View style={{width:'95%', flexDirection: 'row', marginTop: 20 }}>
+
+
+
+</View>
+
+<Text style={estilo.tituloCard}></Text>
+
+<Text style={estilo.tituloCard}></Text>
+
+<Text style={estilo.tituloCard}></Text>
 
 <Text style={estilo.titulo}>Mega Esfiha</Text>
 
@@ -29,3 +42,5 @@ return(
 )
 
 }
+
+

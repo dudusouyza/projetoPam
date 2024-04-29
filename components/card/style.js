@@ -22,8 +22,6 @@ borderColor: 'black',
 
 borderWidth: 5,
 
-flexDirection: 'row',
-
 padding: 25,
 
 shadowColor: '#000',
@@ -38,7 +36,12 @@ elevation: 5,
 
 
 },
-
+tit: {
+    fontSize: 35,
+    fontWeight: "bold",
+    marginTop: 20,
+    flexDirection: 'column'
+  },
 tituloCard: {
 
 fontSize: 15,
@@ -51,7 +54,7 @@ color: '#1d3557',
 
 textoCard: {
 
-fontSize: 10,
+fontSize: 17,
 
 marginTop: 5,
 
@@ -59,9 +62,9 @@ marginTop: 5,
 
 imagemCard: {
 
-width: 100,
+width: 125,
 
-height: 100,
+height: 125,
 
 marginRight: 15,
 
