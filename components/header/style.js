@@ -1,14 +1,26 @@
 import {StyleSheet} from 'react-native'
 
 const estilo = StyleSheet.create({
+    tit: {
+        width: '100%',
+        fontSize: 35,
+        fontWeight: "bold",
+        marginTop: 10,
+        flexDirection: 'row',
+        textAlign: "center",
+      },
 
+      tit1: {
+       margin: 30,
+       fontSize: 35,
+      },
 titulo: {
 
 fontSize: 35,
 
 fontWeight: 'bold',
 
-marginTop: 20,
+marginTop: 1,
 
 },
 

@@ -3,6 +3,7 @@ import { Text, StyleSheet, View, Image, FlatList } from "react-native";
 import Header from "./components/Header";
 import Card from "./components/Card";
 import ROTINAS from './data';
+
 export default function App() {
   return (
     <View style={estilo.container}>
@@ -12,7 +13,7 @@ export default function App() {
 
      data = {ROTINAS}
      keyExtractor = {(item)=>item.id}
-     horizontal = {true}
+     vertical = {true}
      renderItem = {({item}) => (
        <Card
 
@@ -26,6 +27,7 @@ export default function App() {
 
      />
      </View>
+     
     </View>
   );
 }
@@ -37,6 +39,12 @@ const estilo = StyleSheet.create({
     backgroundColor: "white",
     borderColor: "#90E0EF",
     paddingHorizontal: 20,
+  },
+  tit: {
+    fontSize: 35,
+    fontWeight: "bold",
+    marginTop: 20,
+    flexDirection: 'row'
   },
 
   titulo: {
@@ -52,7 +60,7 @@ const estilo = StyleSheet.create({
   },
 
   cardTarefa: {
-    marginTop: 20,
+    marginTop: 50,
     backgroundColor: "#A8DADC",
     width: "100%",
     height: 125,
@@ -67,7 +75,7 @@ const estilo = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.3,
     shadowRadius: 2,
-    elevation: 5,
+    elevation: 6,
   },
 
   tituloCard: {
