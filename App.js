@@ -10,25 +10,92 @@ export default function App() {
       <Header></Header>
       <View style = {{width:'100%'}}>
      <FlatList
-
-     data = {ROTINAS}
+     data = {ROTINAS.slice(0,3)}
      keyExtractor = {(item)=>item.id}
-     vertical = {true}
+     horizontal = {true}
      renderItem = {({item}) => (
        <Card
-
        titulo = {item.titulo}
        Imagem = {item.Imagem}
        descrição = {item.descrição}
-
        />
      )}
-     
-
+     horizontal={true}
+     contentzContainerStyle={estilo.lista}
+     />
+     </View>
+     <View style = {{width:'100%'}}>
+     <FlatList
+     data = {ROTINAS.slice(3,6)}
+     keyExtractor = {(item)=>item.id}
+     horizontal = {true}
+     renderItem = {({item}) => (
+       <Card
+       titulo = {item.titulo}
+       Imagem = {item.Imagem}
+       descrição = {item.descrição}
+       />
+     )}
+     horizontal={true}
+     contentzContainerStyle={estilo.lista}
      />
      </View>
      
+     <View style = {{width:'100%'}}>
+     <FlatList
+     data = {ROTINAS.slice(6,9)}
+     keyExtractor = {(item)=>item.id}
+     horizontal = {true}
+     renderItem = {({item}) => (
+       <Card
+       titulo = {item.titulo}
+       Imagem = {item.Imagem}
+       descrição = {item.descrição}
+       />
+     )}
+     horizontal={true}
+     contentzContainerStyle={estilo.lista}
+     />
+     </View>
+
+     <View style = {{width:'100%'}}>
+     <FlatList
+     data = {ROTINAS.slice(9,12)}
+     keyExtractor = {(item)=>item.id}
+     horizontal = {true}
+     renderItem = {({item}) => (
+       <Card
+       titulo = {item.titulo}
+       Imagem = {item.Imagem}
+       descrição = {item.descrição}
+       />
+     )}
+     horizontal={true}
+     contentzContainerStyle={estilo.lista}
+     />
+     </View>
+
+
+     <View style = {{width:'100%'}}>
+     <FlatList
+     data = {ROTINAS.slice(12,15)}
+     keyExtractor = {(item)=>item.id}
+     horizontal = {true}
+     renderItem = {({item}) => (
+       <Card
+       titulo = {item.titulo}
+       Imagem = {item.Imagem}
+       descrição = {item.descrição}
+       />
+     )}
+     horizontal={true}
+     contentzContainerStyle={estilo.lista}
+     />
+     </View>
     </View>
+
+
+
   );
 }
 
